@@ -8,4 +8,4 @@ spec:
     spec:
       containers:
         - name: hello-world
-          image: <your-docker-image-hello-world-dev>
+          image: ${{ secrets.DOCKER_USERNAME }}/hello-world:latest

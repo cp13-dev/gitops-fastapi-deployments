@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: hello-world
-          image: <your-docker-image-hello-world>
+          image: ${{ secrets.DOCKER_USERNAME }}/hello-world:latest
           ports:
             - containerPort: 80

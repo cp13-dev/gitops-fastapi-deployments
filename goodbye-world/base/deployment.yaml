@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: goodbye-world
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: goodbye-world
+  template:
+    metadata:
+      labels:
+        app: goodbye-world
+    spec:
+      containers:
+        - name: goodbye-world
+          image: ${{ secrets.DOCKER_USERNAME }}/goodbye-world:latest
+          ports:
+            - containerPort: 80
