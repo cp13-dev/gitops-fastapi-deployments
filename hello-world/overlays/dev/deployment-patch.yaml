@@ -8,4 +8,4 @@ spec:
     spec:
       containers:
         - name: hello-world
-          image: ${{ secrets.DOCKER_USERNAME }}/hello-world:latest
+          image: cp13dev/hello-world:latest

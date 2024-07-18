@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: goodbye-world
-          image: ${{ secrets.DOCKER_USERNAME }}/goodbye-world:latest
+          image: cp13dev/goodbye-world:latest
           ports:
             - containerPort: 80
