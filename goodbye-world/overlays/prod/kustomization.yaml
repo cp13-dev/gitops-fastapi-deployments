@@ -1,4 +1,4 @@
-namesace: prod
+namespace: prod
 resources:
   - ../../base
   - namespace.yaml
