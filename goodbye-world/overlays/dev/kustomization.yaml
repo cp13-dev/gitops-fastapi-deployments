@@ -1,5 +1,6 @@
-bases:
+namesace: dev
+resources:
   - ../../base
-
+  - namespace.yaml
 patchesStrategicMerge:
   - deployment-patch.yaml
