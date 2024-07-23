@@ -15,5 +15,16 @@ spec:
       containers:
         - name: goodbye-world
           image: cp13dev/goodbye-world:latest
+          env:
+          - name: BASIC_AUTH_USERNAME
+            valueFrom:
+              secretKeyRef:
+                name: basic-auth
+                key: username
+          - name: BASIC_AUTH_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: basic-auth
+                key: password
           ports:
             - containerPort: 80
