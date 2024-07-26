@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: dev-multiservice
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/cp13-dev/gitops-fastapi-deployments'
+    targetRevision: HEAD
+    path: overlays/prod
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: dev
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
