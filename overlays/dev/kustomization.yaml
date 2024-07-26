@@ -1,5 +1,8 @@
+namespace: dev
 resources:
-- ../../base
+- ../../base/hello-world
+- ../../base/prometheus
+- ../../base/grafana
 namePrefix: dev-
 commonLabels:
   env: dev

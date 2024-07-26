@@ -1,5 +1,8 @@
+namespace: prod
 resources:
-- ../../base
+- ../../base/hello-world
+- ../../base/prometheus
+- ../../base/grafana
 namePrefix: prod-
 commonLabels:
   env: prod
