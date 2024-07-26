@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: cp13-dev/hello-world:latest
+        image: cp13dev/hello-world:latest
         env:
         - name: BASIC_AUTH_USERNAME
           valueFrom:
