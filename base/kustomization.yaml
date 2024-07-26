@@ -1,4 +1,4 @@
 resources:
-- hello-world/
-- prometheus/
-- grafana/
+- hello-world
+- prometheus
+- grafana
